@@ -23,6 +23,7 @@ $("#submitButton").click(function () {
     } else {
     	createParse(name, "available", location);
     }
+    loadFromDB();
 });
 
 //adds to the UI list
