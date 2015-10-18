@@ -27,7 +27,10 @@ $("#submitButton").click(function () {
 
 //adds to the UI list
 function addToList(name, location, availability) {
-    $("#searchTable").append('<tr><td><button id="messageButton" type="button"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Email-icon.png" width="20" height="20"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
+    $("#searchTable").append('<tr><td><button id="messageButton" type="button"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Email-icon.png" width="30" height="30"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
+    $("tr:even").css("background-color", "#E2EFDE");
+    $("tr").css("line-height:100");
+
 }
 
 function loadFromDB() {

@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
     <title>Pizza Partner</title>
 </head>
 <body>
-    <h1 align="center">Pizza Partner</h1>
-    <p> Name:
-        <input type="text" id="name" value="">
-    </p>
-    location:
-    <select id = "location">
-        <option value="culc" selected="selected">CULC</option>
-        <option value="skiles">Skiles</option>
-        <option value="north_ave">North Ave</option>
-        <option value="armstrong">Armstrong</option>
-        <option value="brown">Brown</option>
-        <option value="caldwell">Caldwell</option>
-        <option value="csn">Center Street North</option>
-        <option value="css">Center Street South</option>
-        <option value="cld">Cloudman</option>
-        <option value="cre">Crecine</option>
-        <option value="folk">Folk</option>
-        <option value="fulmer">Fulmer</option>
-        <option value="harris">Harris</option>
-        <option value="maulding">Maulding</option>
-        <option value="woodruff">Woodruff</option>
-    </select>
-        <br></br>
-    <div style="text-align:center">
+    <div class="container" align="center">
+        <div id="header">
+        <h1 align="center">Pizza Party</h1>
+    </div>
+        <div id="name">
+        <p> Name:
+            <input type="text" id="name" value="" placeholder="Enter Name">
+        </p>
+        </div>
+        <div id="location">
+        <p> Location:
+            <select id = "location">
+                <option value="culc" selected="selected">CULC</option>
+                <option value="skiles">Skiles</option>
+                <option value="north_ave">North Ave</option>
+                <option value="armstrong">Armstrong</option>
+                <option value="brown">Brown</option>
+                <option value="caldwell">Caldwell</option>
+                <option value="csn">Center Street North</option>
+                <option value="css">Center Street South</option>
+                <option value="cld">Cloudman</option>
+                <option value="cre">Crecine</option>
+                <option value="folk">Folk</option>
+                <option value="fulmer">Fulmer</option>
+                <option value="harris">Harris</option>
+                <option value="maulding">Maulding</option>
+                <option value="woodruff">Woodruff</option>
+            </select>
+        </p>
+        </div>
         <input type="button" value="Submit" id="submitButton">
     </div>
+
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
     <script>
      Parse.initialize("wdkGsKtPWv1FWkivJZkTqjz2y79PhT8E1sW63MQD", "9jnDcwqrc5gmuf3np5KhoZXp1iJvkAbdfjuWu9Wz");
     </script>
     <script src="pizzaParty.js"></script>
-    
-
 </body>
 </html>
