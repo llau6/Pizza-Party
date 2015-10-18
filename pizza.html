@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Party</title>
+</head>
+<body>
+  <h1>Pizza Party</h1>
+  <h2>Where every party involves pizza</h2>
+
+  <input type="text" id="name">
+  <input type="button" value="Submit" id="submitButton">
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript">
+    $("#submitButton").click(function() {
+      var name = $("#name").val();
+      console.log(name);
+    });
+
+  </script>
+</body>
+</html>
