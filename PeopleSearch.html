@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="pizzaCSS.css">
+
+</head>
 <body>
     <div>
-        <p>Contact Us</p>
+        <button id="contactButton" type="button">Contact Us</button>
     </div>
     <div class="my-container">
         <p>You're almost there....</p>
@@ -15,7 +19,8 @@
                     <p><center>Here are your matches.</center></p>
                 </div>
                 <div class="pick">
-                    <p><center>Take your pick.</center></p>
+                    <p><center>1) Take your pick.</center></p>
+                    <p><center>2) Send your message.</center></p>
                 </div>
               </tr>
               <tr valign="top">
@@ -32,7 +37,13 @@
     </td>
   </tr>
 </table>
-<button id="refreshButton" type="button">Refresh</button>
+<button id="refresh" type="button">Refresh</button>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('body').hide();
+        $('body').fadeIn(2000);
+      });
+    </script>
 </body>
 </html>

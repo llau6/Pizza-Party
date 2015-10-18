@@ -8,9 +8,9 @@
     z-index: 2;
     right: 130px;
     bottom: 190px;
-    color: #E8E8E8;
+    //color: #708090;
     font-size: 50px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 #707070, 0 -1px black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 } 
@@ -19,7 +19,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 170%;
     opacity: 0.6;
 }
 
@@ -29,12 +29,15 @@ body {
 
 #matches {
     font-size: 40px;
+    margin-top: 100px;
 }
 
 .pick {
     font-size: 30px;
-    top: 400px;
+    margin-bottom: 100px;
 }
 
 #searchTable {
+    font-size: 25px;
+    text-align:center;
 }
