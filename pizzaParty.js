@@ -1,5 +1,3 @@
-//DATABASE CLASS
-
 
 function createParse(name, availability, location) {
 	var TestObject = Parse.Object.extend("TestObject");
@@ -8,20 +6,37 @@ function createParse(name, availability, location) {
 	testObject.save({"name": name}).then(function(object) {
 	  testObject.save({"availability": availability}).then(function(object) {
 	  	testObject.save({"location": location}).then(function(object) {
-	  		alert("it definitely worked!");
+	  		//switch to next screen
 	  		window.location = "PeopleSearch.html";
 	  	}
 	)})});
 }
 
-
+$("#refresh").click(function() {
+	loadFromDB();
+})
 $("#submitButton").click(function () {
     var name = $("#name").val()
     var location = $("#location option:selected").text();
     if (name == '') {
         alert("require name");
     } else {
-    	console.log(location);
     	createParse(name, "available", location);
     }
 });
+
+//adds to the UI list
+function addToList(name, location, availability) {
+    $("#searchTable").append('<tr><td><button id="messageButton" type="button"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Email-icon.png" width="20" height="20"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
+}
+
+function loadFromDB() {
+	var query = new Parse.Query("TestObject");
+	query.limit = 100;
+	query.find().then(function(results) {
+	    results.forEach(function(e, i) {
+	    	addToList(e.get("name"), e.get("location"), e.get("availability"));
+	    });
+	});
+}
+
