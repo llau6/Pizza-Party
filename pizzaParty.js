@@ -1,4 +1,8 @@
 $("#submitButton").click(function () {
     var name = $("#name").val();
-    alert(name);
+    if (name == '') {
+        alert("require name");
+    } else {
+        alert(name);
+    }
 });
