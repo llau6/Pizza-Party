@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <body>
-<table width="100%" border="0">
-  <tr>
-    <td colspan="2" bgcolor="#b5dcb3">
-      <h1>Found Pizza People!</h1>
-    </td>
-  </tr>
-  <tr valign="top">
-    <td bgcolor="#aaa" width="50">
-      <b>Waiting....</b><br />
-        <button type="button">Refresh</button>
-    </td>
-    <td bgcolor="#eee" width="100" height="200">
+    <div>
+        <p>Contact Us</p>
+    </div>
+    <div class="my-container">
+        <p>You're almost there....</p>
+        <img src="http://i.huffpost.com/gen/2072900/images/o-PIZZA-HUT-facebook.jpg">
+    </div>
+    
+        <table width="100%" border="0"=>
+              <tr>
+                <div id="matches">
+                    <p><center>Here are your matches.</center></p>
+                </div>
+                <div class="pick">
+                    <p><center>Take your pick.</center></p>
+                </div>
+              </tr>
+              <tr valign="top">
+              <td bgcolor="#eee" width="100" height="200">
+            
         <table id="searchTable" style="width:100%">
           <tr>
               <td></td>
@@ -24,6 +32,7 @@
     </td>
   </tr>
 </table>
+<button id="refreshButton" type="button">Refresh</button>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
 </body>
 </html>
