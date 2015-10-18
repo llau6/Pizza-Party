@@ -34,7 +34,9 @@ function randomString(length, chars) {
 //adds to the UI list
 function addToList(name, location, availability, code, i) {
 	//initalizes chatroom
-    $("#searchTable").append('<tr><td><button id= '+i+' type="button"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Email-icon.png" width="20" height="20"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
+    $("#searchTable").append('<tr><td><button id= '+i+' style="background-color:#8C7A6B" type="button"><img src="pizza.png" width="30" height="30"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
+    $("tr:even").css("background-color", "#4E5166");
+    $("tr").css("line-height:100");
     $("#" + i).click(function() {
 					window.location.href = 'https:/' + '/tlk.io/' + code;
 				});

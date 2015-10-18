@@ -10,7 +10,7 @@
     bottom: 190px;
     //color: #708090;
     font-size: 50px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: 0px 0 black, 0 5px black, -5px 0 black, 0 0px black;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 } 
@@ -20,10 +20,12 @@
     top: 0;
     width: 100%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 body {
+    background:#1A181B;
+    color: #FFF;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -40,4 +42,14 @@ body {
 #searchTable {
     font-size: 25px;
     text-align:center;
+    table-layout: fixed;
+}
+
+#rowOne {
+    font-size: 30px;
+}
+
+#contactButton {
+    margin-bottom: 15px;
+    align: "right";
 }
