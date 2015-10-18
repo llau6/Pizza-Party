@@ -1,16 +1,9 @@
 function addToList(name, location, availability) {
-    var testTable = document.getElementById('searchTable');
-    var newRow = testTable.insertRow(testTable.rows.length);
-    var newCell =  newRow.insertCell(0);
-    var newCell2 = newRow.insertCell(1);
-    var newCell3 = newRow.insertCell(2);
-    var newText = document.createTextNode(name);
-    var newText2 = document.createTextNode(location);
-    var newText3 = document.createTextNode(availability);
-
-    newCell.appendChild(newText);
-    newCell2.appendChild(newText2);
-    newCell3.appendChild(newText3);
+    $("#searchTable").append('<tr><td><button id="messageButton" type="button"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Email-icon.png" width="20" height="20"></button></td><td>'+name+'</td><td>'+location+'</td><td>'+availability+'</td></tr>');
 }
 
+addToList("Jerry", "Student Center", "Free");
+addToList("Eve", "CULC", "Busy");
+addToList("Jerry", "Student Center", "Free");
+addToList("Jerry", "Student Center", "Free");
 addToList("Jerry", "Student Center", "Free");
